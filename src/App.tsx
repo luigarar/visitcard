@@ -8,13 +8,26 @@ import confetti from 'canvas-confetti';
 
 function App() {
   const [cardData, setCardData] = useState<CardData>({
-    name: 'Luis García',
-    jobTitle: 'Gerente de Proyectos',
-    company: 'EXO Industrial Tech',
-    email: 'luis.garcia@exo.com',
-    phone: '+34 612 345 678',
-    website: 'www.exo-industrial.es',
-    address: 'Calle de la Innovación, 42, Madrid',
+    name: 'Luis Antonio García Arroyo',
+    jobTitle: 'INDUSTRIAL ENGINEER',
+    company: 'García Arroyo Landing',
+    email: 'luis.garcia@laga.es',
+    phone: '+34 91 000 0000',
+    website: 'www.laga.es',
+    address: 'MADRID, SPAIN',
+    photo: '',
+    templateId: 0,
+    theme: {
+      primary: '#1A535C',
+      accent: '#CCB072',
+      background: '#FFFFFF',
+      text: '#262626'
+    },
+    typography: {
+      name: 'Manrope',
+      title: 'Manrope',
+      body: 'Manrope'
+    }
   });
 
   const cardRef = useRef<HTMLDivElement>(null);
