@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1A535C;
+  --color-accent: #CCB072;
+  --color-bg-light: #F9F9F9;
+  --color-surface: #F2F2F2;
+  --color-text-main: #262626;
+
+  --font-sans: "Manrope", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-light text-text-main font-sans;
+  }
+}
+
+@layer components {
+  .elevated-card {
+    @apply bg-white rounded-lg shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-all duration-300;
+  }
+
+  .elevated-card:hover {
+    @apply shadow-[0_8px_30px_rgba(0,0,0,0.1)] -translate-y-1;
+  }
+
+  .premium-button {
+    @apply bg-primary text-white py-3 px-6 rounded-md font-semibold transition-all duration-200 active:scale-95;
+  }
+
+  .accent-line {
+    @apply h-1 w-12 bg-accent rounded-full;
+  }
+}
